@@ -1,0 +1,343 @@
+@media screen {
+  .document {
+    margin: 12px;
+    max-width: 21cm;
+    width: 21cm;
+    min-width: 15cm;
+    min-height: 29.7cm;
+    border: 1px solid LightGray;
+    padding-left: 2cm;
+    padding-right: 2cm;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .document .hidden-margin-box {
+    display: none;
+  }
+  .document .editable-area {
+    background-color: OldLace;
+  }
+}
+@media print {
+  .no-print {
+    display: none;
+  }
+  .dyn-tagged {
+    background-color: transparent !important;
+  }
+}
+@page {
+  size: A4;
+  margin-top: 4cm;
+  margin-right: 2cm;
+  margin-bottom: 2cm;
+  margin-left: 2cm;
+  @top-left {
+  }
+  @bottom-right {
+  }
+  border-bottom-style: ;
+  @top-center {
+    content: element(marginbox-running-element-17986);
+  }
+  @bottom-center {
+    content: element(marginbox-running-element-90778)
+  }
+}
+.document {
+  font-size: 11pt;
+  font-family: Sans-Serif;
+  color: #000000;
+}
+.document .large-font {
+  --dyn-style-label: Font large x1.6;
+  font-size: 1.6em;
+}
+.document .small-font {
+  --dyn-style-label: Font small x0.75;
+  font-size: 0.75em;
+}
+.document .bold {
+  --dyn-style-label: Font bold;
+  font-weight: normal
+}
+.document .italic {
+  --dyn-style-label: Font italic;
+  font-style: italic;
+}
+.document .align-left {
+  --dyn-style-label: Align left;
+  text-align: left;
+}
+.document .align-center {
+  --dyn-style-label: Align center;
+  text-align: center;
+}
+.document .align-right {
+  --dyn-style-label: Align right;
+  text-align: right;
+}
+.document .highlight {
+  --dyn-style-label: Highlight;
+  background-color: yellow;
+}
+.document .no-margin {
+  --dyn-style-label: Margin 0;
+  margin: 0;
+}
+.document .valing-top {
+  --dyn-style-label: Vertical align top;
+  vertical-align: top;
+}
+.document .valing-middle {
+  --dyn-style-label: Vertical align middle;
+  vertical-align: middle;
+}
+.document .valing-bottom {
+  --dyn-style-label: Vertical align bottom;
+  vertical-align: bottom;
+}
+.document p {
+  margin-top: 0.5em;
+  margin-right: 0;
+  margin-bottom: 0.5em;
+  margin-left: 0;
+  font-size: 1em;
+  font-weight: normal;
+}
+.document h1 {
+  margin-top: 0.5em;
+  margin-right: 0;
+  margin-bottom: 0.5em;
+  margin-left: 0;
+  font-size: 24pt;
+  font-weight: bold;
+  font-family: Sans-Serif;
+  color: #000000;
+}
+.document h2 {
+  margin-top: 0.5em;
+  margin-right: 0;
+  margin-bottom: 0.5em;
+  margin-left: 0;
+  font-size: 18pt;
+  font-weight: bold;
+  color: #000000;
+  font-family: Sans-Serif;
+}
+.document h3 {
+  margin-top: 0.5em;
+  margin-right: 0;
+  margin-bottom: 0.5em;
+  margin-left: 0;
+  font-size: 14pt;
+  font-weight: bold;
+  color: #000000;
+  font-family: Sans-Serif;
+}
+.document h4 {
+  margin-top: 0.5em;
+  margin-right: 0;
+  margin-bottom: 0.5em;
+  margin-left: 0;
+  font-size: 12pt;
+  font-weight: bold;
+  color: #000000;
+  font-family: Sans-Serif;
+}
+.document h5 {
+  margin-top: 0.5em;
+  margin-right: 0;
+  margin-bottom: 0.5em;
+  margin-left: 0;
+  font-size: 11pt;
+  font-weight: bold;
+  color: #000000;
+  font-family: Sans-Serif;
+}
+.document ul {
+  display: block;
+  list-style-type: disc;
+  list-style-position: outside;
+  margin-top: 0.5em;
+  margin-right: 0;
+  margin-bottom: 0.5em;
+  margin-left: 0;
+  padding-left: 40px;
+}
+.document ol {
+  display: block;
+  list-style-type: decimal;
+  list-style-position: outside;
+  margin-top: 0.5em;
+  margin-right: 0;
+  margin-bottom: 0.5em;
+  margin-left: 0;
+  padding-left: 40px;
+}
+.document li {
+  display: list-item;
+}
+.document table {
+  margin-top: 0.5em;
+  margin-right: 0;
+  margin-bottom: 0.5em;
+  margin-left: 0;
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  border-style: ;
+}
+.document thead {
+  font-family: ;
+  font-weight: bold;
+}
+.document tbody {
+  border-style: ;
+}
+.document th {
+  border-top-style: ;
+  border-right-style: ;
+  border-bottom-style: ;
+  border-left-style: ;
+  font-weight: bold;
+  text-align: center;
+  word-wrap: break-word;
+  color: #ffffff;
+  background-color: #000000;
+  border-width: 2px;
+  border-color: #000000;
+  border-style: solid;
+  padding: 5px;
+}
+.document td {
+  border-top-style: ;
+  border-right-style: ;
+  border-bottom-style: ;
+  border-left-style: ;
+  border-style: solid;
+  padding: 5px;
+  border-width: 1px;
+  border-color: #000000;
+}
+.document table.table-striped {
+  --dyn-style-label: Table-striped;
+}
+.document .table-striped thead {
+}
+.document .table-striped th {
+}
+.document .table-striped tbody tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+.document .table-striped tbody {
+}
+.document .table-striped td {
+}
+.document table.table-striped-footer {
+  --dyn-style-label: Table-striped with Footer;
+}
+.document .table-striped-footer thead {
+}
+.document .table-striped-footer th {
+}
+.document .table-striped-footer tbody tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+.document .table-striped-footer tbody tr:last-child {
+  color: #ffffff;
+  font-weight: bold;
+  background-color: #000000;
+}
+.document .table-striped-footer tbody {
+}
+.document .table-striped-footer td {
+}
+.document .no-borders {
+  --dyn-style-label: Borders none;
+  border-top-style: none;
+  border-right-style: none;
+  border-bottom-style: none;
+  border-left-style: none;
+}
+.document .no-borders th {
+  border-top-style: none;
+  border-right-style: none;
+  border-bottom-style: none;
+  border-left-style: none;
+}
+.document .no-borders td {
+  border-top-style: none;
+  border-right-style: none;
+  border-bottom-style: none;
+  border-left-style: none;
+}
+.document .page-number {
+}
+.document .page-number:before {
+  content: counter(page);
+}
+.document .page-count {
+}
+.document .page-count:before {
+  content: counter(pages);
+}
+.document .break-before {
+  break-before: always;
+}
+.document .break-after {
+  break-after: always;
+}
+.document .break-avoid-inside {
+  break-inside: avoid;
+}
+.document .page-break {
+  break-after: always;
+}
+.document .marginbox-running-element-4977 {
+  position: running(marginbox-running-element-4977);
+}
+.document .marginbox-running-element-8716 {
+  position: running(marginbox-running-element-8716);
+}
+.document .table-footer-cell {
+  --dyn-style-label: Table Footer Cell;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 5px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #000000;
+  background-color: #000000;
+  text-align: right;
+}
+.document .marginbox-running-element-98804 {
+  position: running(marginbox-running-element-98804);
+}
+.document .marginbox-running-element-3426 {
+  position: running(marginbox-running-element-3426);
+}
+.document .marginbox-running-element-56768 {
+  position: running(marginbox-running-element-56768);
+}
+.document .marginbox-running-element-9206 {
+  position: running(marginbox-running-element-9206);
+}
+.document .marginbox-running-element-17986 {
+  position: running(marginbox-running-element-17986);
+}
+.document .marginbox-running-element-90778 {
+  position: running(marginbox-running-element-90778);
+}
+.document .padding-0 {
+  --dyn-style-label: Padding 0;
+  padding: 0cm;
+  padding-top: 0cm;
+  padding-right: 0cm;
+  padding-bottom: 0cm;
+  padding-left: 0cm;
+}
+.document .break-inside-avoid {
+  --dyn-style-label: Break inside avoid;
+  break-inside: avoid;
+}
